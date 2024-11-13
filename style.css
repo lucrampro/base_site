@@ -56,12 +56,19 @@ nav >p{
     margin-top: 2rem; 
     margin-left: 2rem;
     margin-right: 2rem; 
+    transition: 1s;
 
  }
  .header-banner_container{
     margin-top: 3rem;
 
  }
+
+  .header-banner-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+  } 
+  
  .header-banner_hello>h1{
     font-family: var(--main-font-family);
     font-size: 49px;
@@ -153,8 +160,9 @@ font-weight: 700;
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      
+      transition: 1s;
    }
+
    .aboutme-section div{
       padding: 2rem;
    }
@@ -319,3 +327,31 @@ font-weight: 700;
       line-height: 34px;
     
    }
+
+
+   .stats {
+    transition: 1s;
+   }
+
+   .hidden {
+    opacity: 0;
+   }
+
+   .skill p {
+    opacity: 0.2;
+    transition: 0.3s ease-in-out;
+   }
+
+   
+   .skill p:hover {
+    opacity: 1;
+   }
+
+.submit {
+  transition: 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0F1221;
+  color: #ffffff;
+}
